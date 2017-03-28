@@ -11,15 +11,19 @@ import { HeroService }  from './../hero.service';
   templateUrl: './hero-detail.component.html',
   styleUrls: [ './hero-detail.component.css' ]
 })
+
 export class HeroDetailComponent implements OnInit {
+  // defines hero as a hero object
   hero: Hero;
 
+  // on component construction create private vars
   constructor(
     private heroService: HeroService,
     private route: ActivatedRoute,
     private location: Location
   ) {}
 
+  // gets the singular hero in focus from heroService
   ngOnInit(): void {
     this.route.params
       .switchMap((params: Params) => this.heroService.getHero(+params['id']))

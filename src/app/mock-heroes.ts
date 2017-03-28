@@ -1,5 +1,7 @@
+// Import Hero class from hero.ts
 import { Hero } from './hero';
 
+// Create a constant of HEROES with this array of Hero Objects to be accessed across components as a service
 export const HEROES: Hero[] = [
   {id: 11, name: 'Mr. Nice'},
   {id: 12, name: 'Narco'},

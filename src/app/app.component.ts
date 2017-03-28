@@ -1,7 +1,9 @@
+// Root component, nothing else to reference ...
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
+  // Routing links and router-outlet which identifies where the routes render
   template: `
     <h1>{{title}}</h1>
     <nav>

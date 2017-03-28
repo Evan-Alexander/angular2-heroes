@@ -12,7 +12,7 @@ import { HeroService } from './../hero.service';
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
-
+// Be sure to pass in router in constructor
   constructor(
     private router: Router,
     private heroService: HeroService) { }

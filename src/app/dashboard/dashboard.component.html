@@ -1,5 +1,6 @@
 <h3>Top Heroes</h3>
 <div class="grid grid-pad">
+  <!-- go through each hero as an anchor tag and link to the detail route of its id -->
   <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
     <div class="module hero">
       <h4>{{hero.name}}</h4>
